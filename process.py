@@ -14,10 +14,10 @@ def sales_reports(log_file):    #Declaring a function called sales_report and pa
 
 def over_ten(log_file):
     for line in log_file:
-        line = line.rstrip()    
-        amount = line[16:17]  
+        line = line.split(' ')    
+        amount = int(line[2])  
         if amount > 10:
-            print(float (amount))       
+            print(amount)  
         
     
 over_ten(log_file)
