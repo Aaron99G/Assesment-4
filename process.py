@@ -17,7 +17,7 @@ def over_ten(log_file):
         line = line.rstrip()    
         amount = line[16:17]  
         if amount > 10:
-            print(amount)       
+            print(float (amount))       
         
     
 over_ten(log_file)
